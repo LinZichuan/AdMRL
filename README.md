@@ -31,3 +31,7 @@ You can specify the hyper-parameter in launch.py and run experiments:
 ```bash
 python launch.py
 ```
+
+## License
+
+MIT License.
