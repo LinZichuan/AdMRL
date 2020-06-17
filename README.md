@@ -1,6 +1,6 @@
 # AdMRL
 
-This is the implementation for the paper Model-based Adversarial Meta-Reinforcement Learning. 
+This is the implementation for the paper Model-based Adversarial Meta-Reinforcement Learning (https://arxiv.org/abs/2006.08875). 
 
 ## Requirements
 1. OpenAI Baselines (0.1.6)
