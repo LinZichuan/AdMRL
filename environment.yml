@@ -1,0 +1,33 @@
+name: admrl
+channels:
+    - kne
+    - anaconda
+    - defaults
+dependencies:
+    - python==3.6.10
+    - pip==20.0.2
+    - numpy==1.18.1
+    - scipy
+    - path.py
+    - mako
+    - matplotlib
+    - tensorflow==1.12.0
+    - pip:
+        - torch==1.4.0
+        - torchvision==0.2.2
+        - tornado==5.1.1
+        - tqdm==4.31.1
+        - urllib3==1.24.1
+        - webencodings==0.5.1
+        - widgetsnbextension==3.4.2
+        - gym==0.17.1
+        - pyyaml
+        - termcolor
+        - json_tricks
+        - git+https://github.com/Theano/Theano.git@adfe319ce6b781083d8dc3200fb4481b00853791#egg=Theano
+        - git+https://github.com/neocxi/Lasagne.git@484866cf8b38d878e92d521be445968531646bb8#egg=Lasagne
+        - git+https://github.com/openai/baselines.git
+        - cached_property
+        - pyopengl
+        - joblib==0.10.3
+        - mujoco_py==2.0.2.5

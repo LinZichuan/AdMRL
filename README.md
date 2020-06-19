@@ -10,21 +10,8 @@ This is the implementation for the paper [Model-based Adversarial Meta-Reinforce
 5. Python 3.6
 
 ## Installment
-```bash
-pip install -r requirements.txt
-cd rllab
-pip install -e .
-git clone https://github.com/openai/baselines.git
-cd baselines
-pip install -e .
-setup mujoco with ./scripts/setup_mujoco.sh
-export MUJOCO_LICENSE_PATH=<path of mjkey.txt>
-git clone https://github.com/openai/mujoco-py.git
-cd mujoco-py
-pip install -r requirements.txt
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path of mujoco200/bin>
-pip install mujoco_py==2.0.2.5
-```
+To install, you need to first install [MuJoCo](https://www.roboti.us/index.html). Set `LD_LIBRARY_PATH` to point to the MuJoCo binaries (`/$HOME/.mujoco/mujoco200/bin`) and `MUJOCO_LICENSE_PATH` to point to the MuJoCo license (`/$HOME/.mujoco/mjkey.txt`). You can then setup mujoco by running `rllab/scripts/setup_mujoco.sh`.
+To install the remaining dependencies, you can create our environment with `conda env create -f environment.yml`. To use rllab, you also need to run `cd rllab; pip install -e .`.
 
 ## Run
 You can run experiments:
