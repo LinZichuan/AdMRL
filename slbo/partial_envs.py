@@ -1,6 +1,5 @@
 import numpy as np
 from slbo.envs.mujoco.half_cheetah_env import HalfCheetahEnv
-from slbo.envs.mujoco.humanoid_env import HumanoidEnv
 from slbo.envs.mujoco.ant_env import AntEnv
 from slbo.envs.mujoco.hopper_env import HopperEnv
 from slbo.envs.mujoco.walker_env import WalkerEnv

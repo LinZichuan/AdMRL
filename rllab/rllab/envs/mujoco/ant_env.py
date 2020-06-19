@@ -1,10 +1,8 @@
-#from rllab.envs.mujoco.mujoco_env import MujocoEnv
 from rllab.core.serializable import Serializable
 from rllab.envs.base import Step
 from rllab.misc.overrides import overrides
 from rllab.misc import logger
 
-from rllab.envs.mujoco.mujoco_env import q_mult, q_inv
 import numpy as np
 import math
 
@@ -97,14 +95,6 @@ class AntEnv(mujoco_env.MujocoEnv, Serializable):
         #done = not notdone
         #ob = self.get_current_obs()
         #return Step(ob, float(reward), done)
-
-    @overrides
-    def get_ori(self):
-        ori = [0, 1, 0, 0]
-        rot = self.model.data.qpos[self.__class__.ORI_IND:self.__class__.ORI_IND + 4]  # take the quaternion
-        ori = q_mult(q_mult(rot, ori), q_inv(rot))[1:3]  # project onto x-y plane
-        ori = math.atan2(ori[1], ori[0])
-        return ori
 
     @overrides
     def log_diagnostics(self, paths):
