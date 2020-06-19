@@ -27,7 +27,11 @@ pip install mujoco_py==2.0.2.5
 ```
 
 ## Run
-You can specify the hyper-parameter in launch.py and run experiments:
+You can run experiments:
+```bash
+python main.py --taskname=Ant2D
+```
+You can also specify the hyper-parameters in launch.py and run many experiments:
 ```bash
 python launch.py
 ```

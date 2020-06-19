@@ -10,4 +10,3 @@ cached_property
 pyopengl
 joblib
 mako
-mujoco_py==0.5.7
